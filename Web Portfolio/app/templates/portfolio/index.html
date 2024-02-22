@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left_img">
+                <h1>Soy Desarrollador</h1>
+                <h1>Leandro Agsutin Trejo Sundblad</h1>
+                <p>Construyo aplicaciones en Python dinamicas, utilizando bases de datos relacionales.</p>
+                <a href="#contacto" class="btn">Contactame</a>
+            </div>
+            <div class="right_img">
+                <img src="{{ url_for('static', filename='big-data.png') }}" width=600px>
+            </div>
+        </div>
+    </div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+
+{% endblock %}
